@@ -21,6 +21,47 @@
     <title>Fylo data storage component</title>
   </head>
   <body>
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <main class="fylo">
+      <div class="fylo__wrapper">
+        <!-- Box One -->
+        <div class="fylo__update">
+          <div class="fylo__logo">
+            <img src="images/logo.svg" alt="logo Fylo" />
+          </div>
+          <picture class="fylo__options">
+            <div class="fylo__uses">
+              <img src="images/icon-document.svg" alt="Icon document file" />
+            </div>
+            <div class="fylo__uses">
+              <img src="images/icon-folder.svg" alt="Icon folder file" />
+            </div>
+            <div class="fylo__uses">
+              <img src="images/icon-upload.svg" alt="Icon upload file" />
+            </div>
+          </picture>
+        </div>
+        <!-- Box two -->
+        <div class="fylo__storage storage">
+          <div class="storage__used">
+            <h1 class="storage__total">
+              You’ve used <b class="storege__total--gigabytes">815 GB</b> of
+              your storage.
+            </h1>
+          </div>
+          <div class="storage__registerrange">
+            <input type="range" class="storage__range" />
+            <div class="storage__gigabytes gigabytes">
+              <span class="gigabytes__start">0GB</span>
+              <span class="gigabytes__limit">1000GB</span>
+            </div>
+          </div>
+          <div class="storage__gigabytes gigabytes">
+            <p class="gigabytes__left">
+              <b class="gigabytes__left--available">185</b>GB left
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
