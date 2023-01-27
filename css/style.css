@@ -1,12 +1,9 @@
 :root {
-  /* ### Primary */
   --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-  /* ### Neutral */
   --pale-blue: hsl(243, 100%, 93%);
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
-  /* - Weights: 400, 700 */
   --weight-400: 400;
   --weight-700: 700;
 }
@@ -16,7 +13,7 @@
   height: 100vh;
   display: grid;
   place-content: center;
-  background: url("../images/bg-desktop.png") no-repeat bottom center;
+  background: url("../images/bg-desktop.png") no-repeat center 115%;
   background-color: var(--very-dark-blue);
 }
 
@@ -27,7 +24,6 @@
   gap: 2.25rem;
 }
 
-/* box one */
 .fylo__updata {
   width: 22rem;
   min-height: 12rem;
@@ -37,29 +33,34 @@
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
-  border-top-right-radius: 6rem;
-  /*outline: solid blue 2px;
-  */
+  border-top-right-radius: 6.5rem;
   background-color: var(--dark-blue);
 }
 
-/* box one logo */
 .updata__logo {
-  width: 5rem;
-  /* outline: solid 3px green; */
+  width: 8.25rem;
+  margin-bottom: 2rem;
 }
 
-/* box one containerimages */
 .updata__options {
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+}
+
+.updata__uses {
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
-  /* outline: solid 3px yellow; */
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-/* box one icon files */
-.updata__uses {
-  width: 5rem;
-  /* outline: solid 3px black; */
-}
-
-/* End box one  */
+/* become box 2  */
